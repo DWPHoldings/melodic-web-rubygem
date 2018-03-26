@@ -1,0 +1,5 @@
+@import 'melodic';
+
+.test-mixin {
+  @include make-container();
+}

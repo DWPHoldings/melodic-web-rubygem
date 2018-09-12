@@ -26,7 +26,7 @@ module Dummy
     end
     config.to_prepare do
       if ENV['VERBOSE']
-        warn "Loaded Rails #{Rails::VERSION::STRING}, Sprockets #{Sprockets::VERSION}",
+        Kernel.warn "Loaded Rails #{Rails::VERSION::STRING}, Sprockets #{Sprockets::VERSION}",
           "Asset paths: #{Rails.application.config.assets.paths}"
       end
     end

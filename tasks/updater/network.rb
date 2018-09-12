@@ -27,7 +27,7 @@ class Updater
       log_http_get_files files, path_url, false
       files.map do |name|
         Thread.start do
-          contents[name] = open("#{path_url}/#{name}").read
+          contents[name] = open("#{path_url}/#{name}").read # rubocop:disable Security/Open
           WRITE_FILES_MUTEX.synchronize { write_cached_files path, name => contents[name] }
         end
       end.each(&:join)
@@ -63,7 +63,7 @@ class Updater
         File.read(cache_path, mode: 'rb')
       else
         log_http_get_file url, false
-        content = open(url).read
+        content = open(url).read # rubocop:disable Security/Open
         File.open(cache_path, 'wb') { |f| f.write content }
         content
       end
@@ -79,6 +79,7 @@ class Updater
           log cmd
           result = %x(#{cmd})
           raise 'Could not get branch sha!' unless $CHILD_STATUS.success? && !result.empty?
+
           result.split(/\s+/).first
         end
       end

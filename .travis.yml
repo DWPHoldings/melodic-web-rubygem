@@ -12,4 +12,4 @@ env:
   global:
   - VERBOSE=1
 script:
-  bundle exec rubocop . --format tap && bundle exec rake --trace
+  bundle exec rubocop . --format tap --config .rubocop.yml && bundle exec rake --trace

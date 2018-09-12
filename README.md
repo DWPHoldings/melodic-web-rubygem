@@ -1,4 +1,4 @@
-# Melodic Ruby Gem [![Build Status](https://travis-ci.org/DWPHoldings/melodic-web-rubygem.svg?branch=master)](https://travis-ci.org/DWPHoldings/melodic-web-rubygem)
+# Melodic Ruby Gem [![Build Status](https://travis-ci.com/DWPHoldings/melodic-web-rubygem.svg?branch=master)](https://travis-ci.com/DWPHoldings/melodic-web-rubygem)
 
 [Melodic][melodic-home] ruby gem for Ruby on Rails (Sprockets) and Hanami (formerly Lotus).
 

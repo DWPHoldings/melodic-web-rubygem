@@ -13,16 +13,17 @@ Dummy::Application.configure do
   config.eager_load = false
 
   # Configure static asset server for tests with Cache-Control for performance.
-  if config.respond_to?(:serve_static_files)
+  if config.respond_to?(:public_file_server)
+    # config.serve_static_files is removed in rails >= 5.1
+    config.public_file_server.enabled = true
+    config.public_file_server.headers = {'Cache-Control' => 'public, max-age=3600'}
+  elsif config.respond_to?(:serve_static_files)
     # rails >= 4.2
     config.serve_static_files = true
   elsif config.respond_to?(:serve_static_assets)
     # rails < 4.2
     config.serve_static_assets = true
   end
-
-  config.public_file_server.enabled = true
-  config.public_file_server.headers = {'Cache-Control' => 'public, max-age=3600'}
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true

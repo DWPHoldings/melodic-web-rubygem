@@ -5,6 +5,7 @@ class RailsTest < ActionDispatch::IntegrationTest
 
   def test_visit_root
     visit root_path
+    oops
     # ^ will raise on JS errors
 
     assert_equal 200, page.status_code

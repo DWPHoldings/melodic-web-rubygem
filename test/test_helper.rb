@@ -26,6 +26,7 @@ Capybara.register_driver :poltergeist do |app|
 end
 
 Capybara.configure do |config|
+  config.server                = :webrick
   config.app_host              = 'http://localhost:7000'
   config.default_driver        = :poltergeist
   config.javascript_driver     = :poltergeist

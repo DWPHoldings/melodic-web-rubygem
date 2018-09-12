@@ -4,7 +4,6 @@ gemspec
 
 group :development do
   gem 'popper_js', '>= 1.12.3'
-  gem 'rubocop'
 end
 
 group :debug do

@@ -1,0 +1,34 @@
+/*!
+ * Melodic Grid v1.0.0-alpha (https://melodic.helloinspire.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Portions copyright 2018 Inspire Energy Holdings, LLC
+ * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
+ * Forked from Bootstrap, licensed MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@at-root {
+  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "melodic/functions";
+@import "melodic/variables";
+
+@import "melodic/mixins/breakpoints";
+@import "melodic/mixins/grid-framework";
+@import "melodic/mixins/grid";
+
+@import "melodic/grid";
+@import "melodic/utilities/display";
+@import "melodic/utilities/flex";

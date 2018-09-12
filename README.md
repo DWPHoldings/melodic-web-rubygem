@@ -1,8 +1,6 @@
-# Bootstrap Ruby Gem [![Build Status](https://travis-ci.org/twbs/bootstrap-rubygem.svg?branch=master)](https://travis-ci.org/twbs/bootstrap-rubygem) [![Gem](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
+# Melodic Ruby Gem [![Build Status](https://travis-ci.com/DWPHoldings/melodic-web-rubygem.svg?branch=master)](https://travis-ci.com/DWPHoldings/melodic-web-rubygem)
 
-[Bootstrap 4][bootstrap-home] ruby gem for Ruby on Rails (Sprockets) and Hanami (formerly Lotus).
-
-For Sass versions of Bootstrap 3 and 2 see [bootstrap-sass](https://github.com/twbs/bootstrap-sass) instead.
+[Melodic][melodic-home] ruby gem for Ruby on Rails (Sprockets) and Hanami (formerly Lotus).
 
 ## Installation
 
@@ -14,24 +12,24 @@ Please see the appropriate guide for your environment of choice:
 
 ### a. Ruby on Rails
 
-Add `bootstrap` to your Gemfile:
+Add `melodic` to your Gemfile:
 
 ```ruby
-gem 'bootstrap', '~> 4.0.0'
+gem 'melodic', '1.0.0.alpha'
 ```
 
 Ensure that `sprockets-rails` is at least v2.3.2.
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
-Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
+Import Melodic styles in `app/assets/stylesheets/application.scss`:
 
 ```scss
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+// Custom melodic variables must be set or imported *before* melodic.
+@import "melodic";
 ```
 
-The available variables can be found [here](assets/stylesheets/bootstrap/_variables.scss).
+The available variables can be found [here](assets/stylesheets/melodic/_variables.scss).
 
 Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you have just generated a new Rails app,
 it may come with a `.css` file instead. If this file exists, it will be served instead of Sass, so rename it:
@@ -42,35 +40,35 @@ $ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.s
 
 Then, remove all the `*= require` and `*= require_tree` statements from the Sass file. Instead, use `@import` to import Sass files.
 
-Do not use `*= require` in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
+Do not use `*= require` in Sass or your other stylesheets will not be able to access the Melodic mixins and variables.
 
-Bootstrap JavaScript depends on jQuery.
+Melodic JavaScript depends on jQuery.
 If you're using Rails 5.1+, add the `jquery-rails` gem to your Gemfile:
 
 ```ruby
 gem 'jquery-rails'
 ```
 
-Bootstrap tooltips and popovers depend on [popper.js] for positioning.
-The `bootstrap` gem already depends on the
+Melodic tooltips and popovers depend on [popper.js] for positioning.
+The `melodic` gem already depends on the
 [popper_js](https://github.com/glebm/popper_js-rubygem) gem.
 
-Add Bootstrap dependencies and Bootstrap to your `application.js`:
+Add Melodic dependencies and Melodic to your `application.js`:
 
 ```js
 //= require jquery3
 //= require popper
-//= require bootstrap-sprockets
+//= require melodic-sprockets
 ```
 
-While `bootstrap-sprockets` provides individual Bootstrap components
+While `melodic-sprockets` provides individual Melodic components
 for ease of debugging, you may alternatively require
-the concatenated `bootstrap` for faster compilation:
+the concatenated `melodic` for faster compilation:
 
 ```js
 //= require jquery3
 //= require popper
-//= require bootstrap
+//= require melodic
 ```
 
 ### b. Other Ruby frameworks
@@ -86,26 +84,26 @@ Refer to your framework's documentation on the subject.
 
 ### Sass: Autoprefixer
 
-Bootstrap requires the use of [Autoprefixer][autoprefixer].
+Melodic requires the use of [Autoprefixer][autoprefixer].
 [Autoprefixer][autoprefixer] adds vendor prefixes to CSS rules using values from [Can I Use](http://caniuse.com/).
 
-If you are using bootstrap with Rails, autoprefixer is set up for you automatically.
+If you are using melodic with Rails, autoprefixer is set up for you automatically.
 Otherwise, please consult the [Autoprefixer documentation][autoprefixer].
 
 ### Sass: Individual components
 
-By default all of Bootstrap is imported.
+By default all of Melodic is imported.
 
 You can also import components explicitly. To start with a full list of modules copy
-[`_bootstrap.scss`](assets/stylesheets/_bootstrap.scss) file into your assets as `_bootstrap-custom.scss`.
-Then comment out components you do not want from `_bootstrap-custom`.
-In the application Sass file, replace `@import 'bootstrap'` with:
+[`_melodic.scss`](assets/stylesheets/_melodic.scss) file into your assets as `_melodic-custom.scss`.
+Then comment out components you do not want from `_melodic-custom`.
+In the application Sass file, replace `@import 'melodic'` with:
 
 ```scss
-@import 'bootstrap-custom';
+@import 'melodic-custom';
 ```
 
-[bootstrap-home]: http://v4-alpha.getbootstrap.com/
-[bootstrap-variables.scss]: https://github.com/twbs/bootstrap-rubygem/blob/master/templates/project/_bootstrap-variables.scss
+[melodic-home]: https://melodic.helloinspire.com/
+[melodic-variables.scss]: https://github.com/DWPHoldings/melodic-web-rubygem/blob/master/templates/project/_melodic-variables.scss
 [autoprefixer]: https://github.com/ai/autoprefixer
 [popper.js]: https://popper.js.org

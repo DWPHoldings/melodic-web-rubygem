@@ -18,9 +18,9 @@ class Updater
       end
       dist_js = read_files('dist/js', %w[melodic.js melodic.min.js])
       {
-        'assets/javascripts/melodic-sprockets.js': manifest,
-        'assets/javascripts/melodic.js':           dist_js['melodic.js'],
-        'assets/javascripts/melodic.min.js':       dist_js['melodic.min.js']
+        'assets/javascripts/melodic-sprockets.js' => manifest,
+        'assets/javascripts/melodic.js'           => dist_js['melodic.js'],
+        'assets/javascripts/melodic.min.js'       => dist_js['melodic.min.js']
       }.each do |path, content|
         save_file path, remove_source_mapping_url(content)
         log_processed path

@@ -25,8 +25,6 @@ Gem::Specification.new do |s|
   # Integration testing
   s.add_development_dependency 'capybara', '>= 2.6.0'
   s.add_development_dependency 'poltergeist'
-  # Style checking
-  s.add_development_dependency 'rubocop', '~> 0.57'
   # Dummy Rails app dependencies
   s.add_development_dependency 'actionpack', '>= 4.1.5'
   s.add_development_dependency 'activesupport', '>= 4.1.5'

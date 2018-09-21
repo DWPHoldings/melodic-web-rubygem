@@ -7,7 +7,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'bundle-audit'
+  gem 'bundler-audit'
   gem 'rubocop', '~> 0.57'
 end
 

@@ -11,5 +11,7 @@ bundler_args: --path ../../vendor/bundle --without debug
 env:
   global:
   - VERBOSE=1
-script:
-  bundle exec rubocop . --format tap --config .rubocop.yml && bundle exec rake --trace
+script: >-
+  bundle-audit update && bundle-audit check &&
+  bundle exec rubocop . --format tap --config .rubocop.yml &&
+  bundle exec rake --trace

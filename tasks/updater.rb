@@ -24,8 +24,8 @@ class Updater
     @cache_path = cache_path
     @repo_url   = "https://github.com/#{@repo}"
     @save_to    = {
-      js:    'assets/javascripts/melodic',
-      scss:  'assets/stylesheets/melodic'
+      js: 'assets/javascripts/melodic',
+      scss: 'assets/stylesheets/melodic'
     }.merge(save_to)
   end
 

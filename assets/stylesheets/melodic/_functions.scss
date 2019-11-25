@@ -84,3 +84,18 @@
 
   @return mix($color-base, $color, $level * $theme-color-interval);
 }
+
+// Request a color level for any color
+@function color-level-mix($color-name: "rosewood", $level: 0) {
+  $color: color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
+
+@function color-level($color-name: "rosewood", $level: 0) {
+  $color: color($color-name);
+
+  @return adjust-color($color, $lightness: $level * -10);
+}

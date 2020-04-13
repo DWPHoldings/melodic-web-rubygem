@@ -16,10 +16,10 @@ class Updater
   include Js
   include Scss
 
-  def initialize(repo: 'DWPHoldings/melodic-web', branch: 'master', save_to: {}, cache_path: 'tmp/melodic-cache')
+  def initialize(repo: 'DWPHoldings/melodic-web', branch: 'v1-dev', save_to: {}, cache_path: 'tmp/melodic-cache')
     @logger     = Logger.new
     @repo       = repo
-    @branch     = branch || 'master'
+    @branch     = branch || 'v1-dev'
     @branch_sha = branch_sha
     @cache_path = cache_path
     @repo_url   = "https://github.com/#{@repo}"

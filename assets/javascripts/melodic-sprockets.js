@@ -1,11 +1,11 @@
-//= require ./melodic/util
-//= require ./melodic/alert
 //= require ./melodic/button
-//= require ./melodic/carousel
+//= require ./melodic/util
+//= require ./melodic/scrollspy
 //= require ./melodic/collapse
-//= require ./melodic/dropdown
-//= require ./melodic/modal
 //= require ./melodic/tooltip
 //= require ./melodic/popover
-//= require ./melodic/scrollspy
+//= require ./melodic/alert
 //= require ./melodic/tab
+//= require ./melodic/dropdown
+//= require ./melodic/carousel
+//= require ./melodic/modal

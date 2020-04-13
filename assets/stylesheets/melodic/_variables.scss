@@ -20,7 +20,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
-$panther:  #282b2d !default;
+
 
 $grays: () !default;
 $grays: map-merge((
@@ -35,62 +35,68 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:           #007bff !default;
-$mariner:        #3b71d6 !default;
+// Brand colors
+$rosewood:       #cf126d !default;
+$sand:           #efdbcb !default;
+$cosmos:         #1b1b1b !default;
+$malachite:      #00524d !default;
+$pacific:        #2b6ca3 !default;
+$harvest:        #ffa867 !default;
+
+// Additional colors
 $blue-violet:    #5147ad !default;
 $indigo:         #6610f2 !default;
 $purple:         #6f42c1 !default;
-$brilliant-rose: #ef5fb0 !default;
-$fuschia:        #e6168b !default;
 $red:            #dc3545 !default;
 $orange:         #fd7e14 !default;
-$tangerine:      #ffaa67 !default;
 $yellow:         #ffc107 !default;
 $mango:          #f8cc1c !default;
 $vis-vis:        #fff5a5 !default;
 $green:          #28a745 !default;
-$ice-cold:       #a8f8e3 !default;
-$aquamarine:     #50e3ae !default;
 $teal:           #20c997 !default;
-$anakiwa:        #87dffc !default;
-$pelorous:       #41b3c6 !default;
 $cyan:           #17a2b8 !default;
 
 $colors: () !default;
 $colors: map-merge((
-  "blue":           $blue,
-  "mariner":        $mariner,
+  "rosewood":       $rosewood,
+  "sand":           $sand,
+  "cosmos":         $cosmos,
+  "malachite":      $malachite,
+  "pacific":        $pacific,
+  "harvest":        $harvest,
   "blue-violet":    $blue-violet,
   "indigo":         $indigo,
   "purple":         $purple,
-  "brilliant-rose": $brilliant-rose,
-  "fuschia":        $fuschia,
   "red":            $red,
   "orange":         $orange,
-  "tangerine":      $tangerine,
   "yellow":         $yellow,
   "mango":          $mango,
   "vis-vis":        $vis-vis,
   "green":          $green,
-  "ice-cold":       $ice-cold,
-  "aquamarine":     $aquamarine,
   "teal":           $teal,
-  "anakiwa":        $anakiwa,
-  "pelorous":       $pelorous,
   "cyan":           $cyan,
   "white":          $white,
   "gray":           $gray-600,
-  "gray-dark":      $gray-800
 ), $colors);
 
-$primary:       $fuschia !default;
+$brand-colors: () !default;
+$brand-colors: map-merge((
+  "rosewood":  $rosewood,
+  "sand":      $sand,
+  "cosmos":    $cosmos,
+  "malachite": $malachite,
+  "pacific":   $pacific,
+  "harvest":   $harvest
+), $brand-colors);
+
+$primary:       $rosewood !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$success:       $malachite !default;
+$info:          $pacific !default;
+$warning:       $harvest !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $panther !default;
+$dark:          $cosmos !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -106,13 +112,13 @@ $theme-colors: map-merge((
 // stylelint-enable
 
 // Set a specific jump point for requesting color jumps
-$theme-color-interval:      8% !default;
+$theme-color-interval:     10% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-900 !default;
+$yiq-text-dark: $cosmos !default;
 $yiq-text-light: $white !default;
 
 // Options
@@ -161,7 +167,7 @@ $sizes: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $cosmos !default;
 
 // Links
 //
@@ -232,7 +238,7 @@ $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         color("blue") !default;
+$component-active-bg:         color("pacific") !default;
 
 $caret-width:                 .3em !default;
 
@@ -246,17 +252,16 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      Aeonik, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-serif:           Merriweather, Georgia, serif !default;
 $font-family-monospace:       "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              .875rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
-$font-weight-thin:            100 !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
@@ -272,7 +277,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        $font-family-serif !default;
+$headings-font-family:        $font-family-base !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
@@ -796,8 +801,8 @@ $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
 
-$alert-bg-level:                    -10 !default;
-$alert-border-level:                -9 !default;
+$alert-bg-level:                    -9 !default;
+$alert-border-level:                -8 !default;
 $alert-color-level:                 6 !default;
 
 
@@ -900,7 +905,7 @@ $close-text-shadow:                 0 1px 0 $white !default;
 // Code
 
 $code-font-size:                    87.5% !default;
-$code-color:                        $fuschia !default;
+$code-color:                        $rosewood !default;
 
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;

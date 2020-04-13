@@ -23,6 +23,7 @@ module Dummy
     if Rails::VERSION::MAJOR > 4
       # Rails 4 precompiles application.css|js by default, but future version of Rails do not.
       config.assets.precompile += %w[application.css application.js]
+      config.assets.precompile << /\.(?:svg|eot|woff|woff2|ttf)\z/
     end
     config.to_prepare do
       if ENV['VERBOSE']

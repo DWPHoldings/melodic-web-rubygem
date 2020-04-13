@@ -1,11 +1,12 @@
 language: ruby
 sudo: false
 rvm:
-  - 2.6.5
+  - 2.4.10
 gemfile:
   - test/gemfiles/rails_4_2.gemfile
   - test/gemfiles/rails_5_0.gemfile
   - test/gemfiles/rails_5_1.gemfile
+  - test/gemfiles/rails_5_2.gemfile
 cache: bundler
 bundler_args: --path ../../vendor/bundle --without debug
 env:

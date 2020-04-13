@@ -5,6 +5,7 @@ require 'forwardable'
 require 'term/ansicolor'
 require 'fileutils'
 
+require_relative 'updater/fonts'
 require_relative 'updater/scss'
 require_relative 'updater/js'
 require_relative 'updater/logger'
@@ -13,6 +14,7 @@ require_relative 'updater/network'
 class Updater
   extend Forwardable
   include Network
+  include Fonts
   include Js
   include Scss
 
@@ -24,6 +26,7 @@ class Updater
     @cache_path = cache_path
     @repo_url   = "https://github.com/#{@repo}"
     @save_to    = {
+      fonts: 'assets/fonts',
       js:    'assets/javascripts/melodic',
       scss:  'assets/stylesheets/melodic'
     }.merge(save_to)
@@ -51,6 +54,7 @@ class Updater
     FileUtils.rm_rf('assets')
     @save_to.each { |_, v| FileUtils.mkdir_p(v) }
 
+    update_font_assets
     update_scss_assets
     update_javascript_assets
     store_version

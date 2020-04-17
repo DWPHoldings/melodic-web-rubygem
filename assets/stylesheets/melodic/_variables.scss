@@ -801,10 +801,8 @@ $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
 
-$alert-bg-level:                    -9 !default;
-$alert-border-level:                -8 !default;
-$alert-color-level:                 6 !default;
-
+$alert-bg-level:                    0 !default;
+$alert-border-level:                8 !default;
 
 // Progress bars
 
@@ -896,11 +894,11 @@ $carousel-transition:               transform .6s ease !default;
 
 
 // Close
-
-$close-font-size:                   $font-size-base * 1.5 !default;
-$close-font-weight:                 $font-weight-bold !default;
 $close-color:                       $black !default;
-$close-text-shadow:                 0 1px 0 $white !default;
+$close-width:                       1rem !default;
+$close-height:                      1rem !default;
+$close-thickness:                   2px !default;
+$close-opacity:                     .75 !default;
 
 // Code
 

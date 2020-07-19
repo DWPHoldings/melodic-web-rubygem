@@ -18,7 +18,7 @@ task :test_all_gemfiles do
   require 'shellwords'
   cmd      = 'bundle install --quiet && bundle exec rake --trace'
   statuses = Dir.glob('./test/gemfiles/*{[!.lock]}').map do |gemfile|
-    env = {'BUNDLE_GEMFILE': gemfile}
+    env = {'BUNDLE_GEMFILE' => gemfile}
     cmd_with_env = "  (#{env.map { |k, v| "export #{k}=#{Shellwords.escape v}" } * ' '}; #{cmd})"
     warn Term::ANSIColor.cyan("Testing\n#{cmd_with_env}")
     Bundler.with_clean_env do

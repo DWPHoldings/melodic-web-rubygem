@@ -1,5 +1,31 @@
 @import 'melodic';
 
+//
+// Font Family sources
+//
+
+// Aeonik
+@font-face {
+  font-family: Aeonik;
+  src: url("Aeonik-Light.eot");
+  src: url("Aeonik-Light.eot?#iefix") format("embedded-opentype"), url("Aeonik-Light.woff2") format("woff2"), url("Aeonik-Light.woff") format("woff");
+  font-weight: $font-weight-light;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("Aeonik-Regular.eot");
+  src: url("Aeonik-Regular.eot?#iefix") format("embedded-opentype"), url("Aeonik-Regular.woff2") format("woff2"), url("Aeonik-Regular.woff") format("woff");
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("Aeonik-Bold.eot");
+  src: url("Aeonik-Bold.eot?#iefix") format("embedded-opentype"), url("Aeonik-Bold.woff2") format("woff2"), url("Aeonik-Bold.woff") format("woff");
+  font-weight: $font-weight-bold;
+}
+
 .test-mixin {
   @include make-container();
 }

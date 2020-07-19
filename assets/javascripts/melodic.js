@@ -1,6 +1,6 @@
 /*!
-  * Melodic v1.0.0-alpha (https://melodic.helloinspire.com)
-  * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Melodic v1.0.0-beta (https://melodic.helloinspire.com)
+  * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Portions Copyright 2018 Inspire Energy Holdings, LLC
   * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
   */

@@ -1,16 +1,25 @@
 .close {
   float: right;
-  font-size: $close-font-size;
-  font-weight: $close-font-weight;
-  line-height: 1;
+  width: $close-width;
+  height: $close-height;
   color: $close-color;
-  text-shadow: $close-text-shadow;
-  opacity: .5;
+  opacity: $close-opacity;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: $close-width;
+    width: $close-width;
+    height: $close-thickness;
+    content: "";
+    background: $close-color;
+  }
+  &::before { transform: rotate(45deg); }
+  &::after { transform: rotate(-45deg); }
 
   @include hover-focus {
-    color: $close-color;
-    text-decoration: none;
-    opacity: .75;
+    opacity: 1;
   }
 
   // Opinionated: add "hand" cursor to non-disabled .close elements

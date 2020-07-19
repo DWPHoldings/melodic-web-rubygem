@@ -27,15 +27,14 @@
 // Expand the right padding and account for the close button's positioning.
 
 .alert-dismissible {
-  padding-right: ($close-font-size + $alert-padding-x * 2);
+  padding-right: ($close-width + $alert-padding-x * 2);
 
   // Adjust close link position
   .close {
     position: absolute;
     top: 0;
     right: 0;
-    padding: $alert-padding-y $alert-padding-x;
-    color: inherit;
+    padding: ($alert-padding-y * 2);
   }
 }
 
@@ -46,6 +45,6 @@
 
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
-    @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+    @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), color-yiq($value));
   }
 }

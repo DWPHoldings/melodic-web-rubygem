@@ -8,7 +8,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): popover.js
+ * Melodic (v2.0.0-alpha): popover.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -19,7 +19,7 @@ var Popover = function ($) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'popover';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.popover';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $.fn[NAME];

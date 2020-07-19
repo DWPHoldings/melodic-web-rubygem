@@ -1,5 +1,5 @@
 /*!
-  * Melodic v1.0.0-beta (https://melodic.helloinspire.com)
+  * Melodic v2.0.0 (https://melodic.helloinspire.com)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Portions Copyright 2018 Inspire Energy Holdings, LLC
   * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
@@ -55,7 +55,7 @@ function _inheritsLoose(subClass, superClass) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): util.js
+ * Melodic (v2.0.0-alpha): util.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -195,7 +195,7 @@ var Util = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): alert.js
+ * Melodic (v2.0.0-alpha): alert.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -207,7 +207,7 @@ var Alert = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'alert';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.alert';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -367,7 +367,7 @@ var Alert = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): button.js
+ * Melodic (v2.0.0-alpha): button.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -379,7 +379,7 @@ var Button = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'button';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.button';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -530,7 +530,7 @@ var Button = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): carousel.js
+ * Melodic (v2.0.0-alpha): carousel.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -542,7 +542,7 @@ var Carousel = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'carousel';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.carousel';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -1029,7 +1029,7 @@ var Carousel = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): collapse.js
+ * Melodic (v2.0.0-alpha): collapse.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -1041,7 +1041,7 @@ var Collapse = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'collapse';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.collapse';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -1398,7 +1398,7 @@ var Collapse = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): dropdown.js
+ * Melodic (v2.0.0-alpha): dropdown.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -1410,7 +1410,7 @@ var Dropdown = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'dropdown';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.dropdown';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -1863,7 +1863,7 @@ var Dropdown = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): modal.js
+ * Melodic (v2.0.0-alpha): modal.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -1875,7 +1875,7 @@ var Modal = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'modal';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.modal';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -2439,7 +2439,7 @@ var Modal = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): tooltip.js
+ * Melodic (v2.0.0-alpha): tooltip.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -2451,7 +2451,7 @@ var Tooltip = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'tooltip';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.tooltip';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -3104,7 +3104,7 @@ var Tooltip = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): popover.js
+ * Melodic (v2.0.0-alpha): popover.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -3116,7 +3116,7 @@ var Popover = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'popover';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.popover';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -3297,7 +3297,7 @@ var Popover = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): scrollspy.js
+ * Melodic (v2.0.0-alpha): scrollspy.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -3309,7 +3309,7 @@ var ScrollSpy = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'scrollspy';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.scrollspy';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -3608,7 +3608,7 @@ var ScrollSpy = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): tab.js
+ * Melodic (v2.0.0-alpha): tab.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -3620,7 +3620,7 @@ var Tab = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'tab';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.tab';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -3855,7 +3855,7 @@ var Tab = function ($$$1) {
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): index.js
+ * Melodic (v2.0.0-alpha): index.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

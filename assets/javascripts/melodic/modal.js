@@ -6,7 +6,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): modal.js
+ * Melodic (v2.0.0-alpha): modal.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -17,7 +17,7 @@ var Modal = function ($) {
    * ------------------------------------------------------------------------
    */
   var NAME = 'modal';
-  var VERSION = '1.0.0-alpha';
+  var VERSION = '2.0.0-alpha';
   var DATA_KEY = 'mel.modal';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';

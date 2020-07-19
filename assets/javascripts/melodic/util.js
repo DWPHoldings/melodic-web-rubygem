@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Melodic (v1.0.0-alpha): util.js
+ * Melodic (v2.0.0-alpha): util.js
  * Licensed under MIT (https://github.com/DWPHoldings/melodic-web/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

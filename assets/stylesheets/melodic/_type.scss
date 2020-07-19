@@ -1,6 +1,54 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
 //
+// Font Family sources
+//
+
+// Aeonik
+@font-face {
+  font-family: Aeonik;
+  src: url("/assets/fonts/Aeonik-Light.eot");
+  src: url("/assets/fonts/Aeonik-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Aeonik-Light.woff2") format("woff2"), url("/assets/fonts/Aeonik-Light.woff") format("woff");
+  font-weight: $font-weight-light;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("/assets/fonts/Aeonik-Regular.eot");
+  src: url("/assets/fonts/Aeonik-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Aeonik-Regular.woff2") format("woff2"), url("/assets/fonts/Aeonik-Regular.woff") format("woff");
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("/assets/fonts/Aeonik-Bold.eot");
+  src: url("/assets/fonts/Aeonik-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Aeonik-Bold.woff2") format("woff2"), url("/assets/fonts/Aeonik-Bold.woff") format("woff");
+  font-weight: $font-weight-bold;
+}
+
+// Circular
+@font-face {
+  font-family: CircularXX;
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Light.otf");
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Light.otf?#iefix") format("embedded-opentype");
+  font-weight: $font-weight-light;
+}
+
+@font-face {
+  font-family: CircularXX;
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Regular.otf");
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Regular.otf?#iefix") format("embedded-opentype");
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: CircularXX;
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Bold.otf");
+  src: url("http://dx6f60kvkrzhe.cloudfront.net/Circular-Bold.otf?#iefix") format("embedded-opentype");
+  font-weight: $font-weight-bold;
+}
+
+//
 // Headings
 //
 
